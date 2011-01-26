@@ -1,0 +1,55 @@
+@prefix plings: <http://plings.net/
+@prefix rev: <http://purl.org/stuff/rev#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#"> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>.
+@prefix event: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#>.
+@prefix cal: <http://www.w3.org/2002/12/cal#>.
+@prefix gr: <http://purl.org/goodrelations/v1#>.
+
+@base <http://plings.net/a/295421/>.
+
+<http://plings.net/a/295421>
+	a plings:Activity;
+	rdfs:label "Climbing - Teesdale Leisure Centre"@en;
+	gr:hasPriceSpecification <price> ;
+	plings:minAge "0"^^xsd:int;
+	plings:maxAge "0"^^xsd:int;
+	plings:provider <http://plings.net/o/4863>;
+
+	event:place <http://plings.net/v/59352>;
+	event:time <time>; 
+	cal:dtstart "2011-01-26T12:00:00"^^xsd:dateTime;
+	cal:dtstart "2011-01-26T15:00:00"^^xsd:dateTime;
+	plings:contact <http://plings.net/a/295421/contact>;
+
+<price>
+	a gr:PriceSpecifcation ;
+	gr:hasCurrency "GBP";
+	gr:hasCurrencyValue "0.00"^^xsd:float.
+<time>
+	a tl:Interval;
+	tl:at "2011-01-26T12:00:00"^^xsd:dateTime;
+	tl:duration "PT3H"^^xsd:duration.
+
+<contact>
+	a foaf:Agent;
+	foaf:name "Unknown";
+	plings:contactNumber "01833 696 374/01833 696 375";
+	plings:contactAddress "Strathmore Rd, Barnard Castle, County Durham, DL12 8DS"@en;
+	plings:contactEmail "Unknown".
+
+plings:Activity
+	rdfs:subClassOf event:Event, gr:Offering;
+	rdfs:label "Activity"@en;
+	rdfs:comment "A thing to do."@en; .
+
+
