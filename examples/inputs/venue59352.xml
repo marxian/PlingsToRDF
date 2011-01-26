@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<venue>
+  <VenueID>59352</VenueID>
+  <Name>Teesdale Leisure Centre</Name>
+  <BuildingNameNo>Strathmore Rd,</BuildingNameNo>
+  <Street>Strathmore Road</Street>
+  <Town/>
+  <PostTown>Barnard Castle</PostTown>
+  <County>Yorkshire</County>
+  <Postcode>DL12 8DS</Postcode>
+  <LADCUA>
+    <LACode>00EJ</LACode>
+    <LAName>County Durham</LAName>
+  </LADCUA>
+  <Ward>
+    <WardCode>00EJME</WardCode>
+    <WardName>Barnard Castle East</WardName>
+  </Ward>
+  <PCT>5ND</PCT>
+  <OwnerOrgName/>
+  <PAFID>536084</PAFID>
+  <BestViewID>0</BestViewID>
+  <PriContactForename>Unknown</PriContactForename>
+  <PriContactSurname>Unknown</PriContactSurname>
+  <PriContactEmail>Unknown</PriContactEmail>
+  <PriContactPhone>01833 696 374/01833 </PriContactPhone>
+  <PriContactFax/>
+  <AddedByOrg>4863</AddedByOrg>
+  <Latitude>54.551442</Latitude>
+  <Longitude>-1.916745</Longitude>
+  <image_type/>
+  <image_name/>
+  <image_size>0</image_size>
+  <Description/>
+  <Website/>
+  <created>2010-01-29 15:28:36</created>
+  <updated>0000-00-00 00:00:00</updated>
+  <ReferralSource/>
+  <ParkingSpaces>0</ParkingSpaces>
+  <CyclePark/>
+  <DisabledFacilitiesNotes/>
+  <HS_HasFireSaftyProcedure>0</HS_HasFireSaftyProcedure>
+  <HS_RegularFireDrillsAlarmTests>0</HS_RegularFireDrillsAlarmTests>
+  <HS_FirstAidBoxes>0</HS_FirstAidBoxes>
+  <HS_FirstAidBoxesOffSite>0</HS_FirstAidBoxesOffSite>
+  <HS_HazardsHighlighted>0</HS_HazardsHighlighted>
+  <AltNames>
+	</AltNames>
+  <DisabledFacilities>
+    <DisabledFacility>
+      <FacilityID>1</FacilityID>
+      <FacilityName>Parking</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>2</FacilityID>
+      <FacilityName>Finding and Reaching the entrance</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>3</FacilityID>
+      <FacilityName>Reception area</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>4</FacilityID>
+      <FacilityName>Doorways</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>5</FacilityID>
+      <FacilityName>Changing Facilities</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>6</FacilityID>
+      <FacilityName>Activity Areas</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>7</FacilityID>
+      <FacilityName>Toilets</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>8</FacilityID>
+      <FacilityName>Social Areas</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>9</FacilityID>
+      <FacilityName>Spectator Areas</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+    <DisabledFacility>
+      <FacilityID>10</FacilityID>
+      <FacilityName>Emergency Exits</FacilityName>
+      <VenueHas>No</VenueHas>
+      <FurtherDetails/>
+    </DisabledFacility>
+  </DisabledFacilities>
+</venue>

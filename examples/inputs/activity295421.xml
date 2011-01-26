@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plings SYSTEM "http://feeds.plings.net/xml.activity.dtd">
+<plings>
+  <generated>
+    <year>2011</year>
+    <month>01</month>
+    <monthName>January</monthName>
+    <dayofmonth>26</dayofmonth>
+    <hour>10</hour>
+    <min>47</min>
+    <sec>51</sec>
+    <requested/>
+  </generated>
+  <activity id="295421">
+    <Name>Climbing - Teesdale Leisure Centre</Name>
+    <Starts>2011-01-26 12:00:00</Starts>
+    <Ends>2011-01-26 15:00:00</Ends>
+    <Details>&lt;p&gt;If you have never climbed before or just need a new challenge then this if for you. Indoor sessions will be held at Teesdale Leisure Centre at our fanctastic newly extended climbing wall. Two extra climbing sessions will introduce you to advanced techniques and abseiling. No experience is necessary as we have fully qualified staff to help you, and equipment is also available to hire.&lt;/p&gt; &lt;p&gt;2:30pm-4:00pm - 10-15 year olds&lt;br /&gt;4:15pm-5:45pm - Family time&lt;/p&gt;</Details>
+    <MinAge>0</MinAge>
+    <MaxAge>0</MaxAge>
+    <Cost>0.00</Cost>
+    <ProviderProjectDept/>
+    <ContactName>Unknown</ContactName>
+    <ContactNumber>01833 696 374/01833 696 375</ContactNumber>
+    <ContactEmail>Unknown</ContactEmail>
+    <ContactAddress>Strathmore Rd,  
+Barnard Castle,  
+County Durham,  
+DL12 8DS</ContactAddress>
+    <categories>
+</categories>
+    <ecmareas>
+</ecmareas>
+    <keywords>
+      <keyword>climbing</keyword>
+    </keywords>
+    <venue id="59352">
+      <Name>Teesdale Leisure Centre</Name>
+      <BuildingNameNo>Strathmore Rd,</BuildingNameNo>
+      <Street>Strathmore Road</Street>
+      <Town/>
+      <PostTown/>
+      <County/>
+      <Postcode>DL12 8DS</Postcode>
+      <Telephone>01833 696 374/01833 </Telephone>
+      <PlingsPlacesLink>http://plings.net/v/59352</PlingsPlacesLink>
+      <LA>
+        <LACode>00EJ</LACode>
+        <LAName>County Durham</LAName>
+      </LA>
+      <LAName>County Durham</LAName>
+      <Ward>
+        <WardCode>00EJME</WardCode>
+        <WardName>Barnard Castle East</WardName>
+      </Ward>
+      <WardName>Barnard Castle East</WardName>
+      <Latitude>54.551442</Latitude>
+      <Longitude>-1.916745</Longitude>
+    </venue>
+    <provider id="4863">
+      <Name>Get Out There - Durham County Council</Name>
+      <Description>Get Out There is the Young person s website for things to do and places to go in County Durham. On the website you will find activities which are from sources such as ourselves, community and voluntary sector and private sector organisations. These can be things such as classes at your local leisure centre, film making workshops or events on at your local youth centre. You will find information on the date and time of the event or activity, the location shown on a user friendly map, the facility to enquire online about the activity and how to contact the organisation for more information. There is also regular blogs updating young people on the latest Get Out There news, prizes up for grabs and any new opportunities available. Young people also get the opportunity to add their views by posting comments, suggesting activities or taking part in positive activities surveys. Checks are carried out to ensure that the activities are from trusted sources and that organisations provide the necessary documents to ensure the safety and enjoyment of young people. Get Out There also feeds into the National website for positive activities   Plings, Places To Go, Things to Do  Places and Things  which is a part of the DCSF funded Information and Signposting Project.</Description>
+      <Website>http://www.getoutthere.info/</Website>
+      <Contact>Paul Hebron</Contact>
+      <Email>paul.hebron@durham.gov.uk</Email>
+      <Phone/>
+      <Fax/>
+      <BuildingNameNo>County Hall</BuildingNameNo>
+      <Street/>
+      <Town/>
+      <PostTown/>
+      <County/>
+      <Postcode>DH1 5UL</Postcode>
+      <LA>00EJ</LA>
+      <LAName>County Durham</LAName>
+      <Ward>00EJNS</Ward>
+      <WardName>0</WardName>
+      <Latitude>54.786038</Latitude>
+      <Longitude>-1.583995</Longitude>
+      <network>
+        <name>Get Out There - Durham County Council</name>
+        <description>Get Out There is the Young person's website for things to do and places to go in County Durham. 
+ 
+On the website you will find activities which are from sources such as ourselves, community and voluntary sector and private sector organisations. These can be things such as classes at your local leisure centre, film making workshops or events on at your local youth centre. 
+ 
+You will find information on the date and time of the event or activity, the location shown on a user friendly map, the facility to enquire online about the activity and how to contact the organisation for more information. There is also regular blogs updating young people on the latest Get Out There news, prizes up for grabs and any new opportunities available. Young people also get the opportunity to add their views by posting comments, suggesting activities or taking part in positive activities surveys. 
+ 
+Checks are carried out to ensure that the activities are from trusted sources and that organisations provide the necessary documents to ensure the safety and enjoyment of young people. 
+ 
+Get Out There also feeds into the National website for positive activities - Plings, Places To Go, Things to Do 'Places and Things' which is a part of the DCSF funded Information and Signposting Project.</description>
+        <website>http://www.getoutthere.info/</website>
+      </network>
+    </provider>
+    <linkedActivities count="0">
+</linkedActivities>
+  </activity>
+</plings>
