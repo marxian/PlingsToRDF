@@ -1,8 +1,11 @@
-@prefix plings: <http://plings.net/terms#>.
+@prefix activity: <http://plings.net/terms#>. #needs to be created
+@prefix concept: <http://plings.net/keywords/> . # needs to be created
+@base <http://plings.net/a/295421/> . 
+
 @prefix rev: <http://purl.org/stuff/rev#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix v: <http://www.w3.org/2006/vcard/ns#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
@@ -15,22 +18,21 @@
 @prefix cal: <http://www.w3.org/2002/12/cal#>.
 @prefix gr: <http://purl.org/goodrelations/v1#>.
 
-@base <http://plings.net/a/295421/>.
-
 <http://plings.net/a/295421>
-	a plings:Activity;
-	rdfs:label "Climbing - Teesdale Leisure Centre"@en;
+	a activity:Activity;
+	rdfs:label "Climbing - Teesdale Leisure Centre"@en; 
 	gr:hasPriceSpecification <price> ;
-	plings:minAge "0"^^xsd:int;
-	plings:maxAge "0"^^xsd:int;
-	plings:provider <http://plings.net/o/4863>;
-
+	activity:minAge "0"^^xsd:int;
+	activity:maxAge "0"^^xsd:int;
+	activity:provider <http://plings.net/o/4863>;
 	event:place <http://plings.net/v/59352>;
 	event:time <time>; 
 	cal:dtstart "2011-01-26T12:00:00"^^xsd:dateTime;
 	cal:dtstart "2011-01-26T15:00:00"^^xsd:dateTime;
-	plings:contact <http://plings.net/a/295421/contact>;
-
+	activity:contact <http://plings.net/a/295421/contact> ;
+  dct:subject  concept:Climbing ;
+# activity:relatedActivity <?a> , <?b> ;
+.
 <price>
 	a gr:PriceSpecifcation ;
 	gr:hasCurrency "GBP";
@@ -43,13 +45,76 @@
 <contact>
 	a foaf:Agent;
 	foaf:name "Unknown";
-	plings:contactNumber "01833 696 374/01833 696 375";
-	plings:contactAddress "Strathmore Rd, Barnard Castle, County Durham, DL12 8DS"@en;
-	plings:contactEmail "Unknown".
+	ov:phoneNumber "01833 696 374/01833 696 375";
+	ov:postalAddress "Strathmore Rd, Barnard Castle, County Durham, DL12 8DS";
+	foaf:mbox <mailto:someone@example.org> ; #this field doesn't have a value in this particular XML record, but is provided as an example
+ .
 
-plings:Activity
+#Categories
+
+#ECM Areas
+
+#Keywords
+
+concept:Climbing a skos:Concept ;
+  rdfs:label "Climbing"@en;
+  skos:inScheme concept: ;
+  skos:broader concept:PhysicalActivity ;
+  skos:narrower concept:Bouldering , concept:IndoorClimbing , concept:OutdoorClimbing 
+.
+
+concept: a skos:ConceptScheme ;
+  rdfs:label "Plings Concept Scheme"@en ;
+#  dct:creator <?> ;
+  skos:hasTopConcept concept:Activity ;
+.
+
+<http://plings.net/v/59352> a activity:Venue ;
+  rdfs:label "Teesdale Leisure Centre" ;
+  geo:lat 54.551442 ;
+  geo:long -1.916745 ;
+  v:street-address "Strathmore Road" ;
+  v:postal-code "DL12 8DS" ;
+  ov:phoneNumber "01833 696 374" ;
+  ov:localAuthority <http://statistics.data.gov.uk/doc/local-authority-district/00EJ> ;
+  ov:ward <http://statistics.data.gov.uk/id/local-authority-ward/00EJME> 
+.
+
+#provider
+<http://plings.net/o/4863>
+  a activity:ActivityProvider ;
+  rdfs:label "Get Out There - Durham County Council"@en ;
+  dct:description "Get Out There is the Young person's website for things to do and places to go in County Durham. On the website you will find activities which are from sources such as ourselves, community and voluntary sector and private sector organisations. These can be things such as classes at your local leisure centre, film making workshops or events on at your local youth centre. You will find information on the date and time of the event or activity, the location shown on a user friendly map, the facility to enquire online about the activity and how to contact the organisation for more information. There is also regular blogs updating young people on the latest Get Out There news, prizes up for grabs and any new opportunities available. Young people also get the opportunity to add their views by posting comments, suggesting activities or taking part in positive activities surveys. Checks are carried out to ensure that the activities are from trusted sources and that organisations provide the necessary documents to ensure the safety and enjoyment of young people. Get Out There also feeds into the National website for positive activities   Plings, Places To Go, Things to Do  Places and Things  which is a part of the DCSF funded Information and Signposting Project."@en ;
+  foaf:page <http://www.getoutthere.info/> ;
+  foaf:homepage <http://www.getoutthere.info/> ;
+  activity:contact <http://plings.net/o/4863/contact> ;
+  v:street-address "County Hall" ;
+  v:postal-code "DH1 5UL" ;
+.  
+<http://plings.net/o/4863/contact>
+  a foaf:Agent ;
+  foaf:name "Paul Hebron" ;
+  foaf:mbox <mailto:paul.hebron@durham.gov.uk> ;
+.
+  
+# Vocabulary
+activity:Activity
 	rdfs:subClassOf event:Event, gr:Offering;
 	rdfs:label "Activity"@en;
-	rdfs:comment "A thing to do."@en; .
+	rdfs:comment "A thing to do, perhaps with a particular time and place. For example, Yoga class, Wednesday 7pm, Ashton Leisure Centre."@en; 
+  rdfs:isDefinedBy activity:
+.
 
+# Activity properties
+# activity:minAge
+# activity:maxAge
+# activity:provider
+# activity:contact
+# activity:relatedActivity
+
+# openvocab properties
+# localAuthority
+# ward
+# phoneNumber
+# postalAddress
 
