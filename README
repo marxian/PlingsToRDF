@@ -1,0 +1,8 @@
+TODO
+
+Some of the modelling for venue is in the activity.ttl, but there are other properties that need to be captured that are present in the HTML and API outputs. Most of these, eg, fire drill tests, parking spaces, disabled facilities, will probably need to be defined, probably in the activity: namespace.
+
+
+Keywords (and categories etc?) should be modelled as a SKOS concept scheme.
+
+

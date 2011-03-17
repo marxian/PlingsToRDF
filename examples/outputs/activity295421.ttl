@@ -103,11 +103,17 @@ concept: a skos:ConceptScheme ;
 .
   
 # Vocabulary
+
+activity: a owl:Ontology ;
+  rdfs:label "Activity Ontology"@en ;
+  rdfs:comment "This vocabulary contains a small set of terms that describe activities (primarily leisure activities) and the venues at which those activities take place."@en-gb ;
+.
+
 activity:Activity
   a rdfs:Class
 	rdfs:subClassOf event:Event, gr:Offering;
 	rdfs:label "Activity"@en;
-	rdfs:comment "A thing to do, perhaps with a particular time and place. For example, Yoga class, Wednesday 7pm, Ashton Leisure Centre."@en; 
+	rdfs:comment "A thing to do for the purposes of leisure, perhaps with a particular time and place. For example, Yoga class, Wednesday 7pm, Ashton Leisure Centre."@en; 
   rdfs:isDefinedBy activity:
 .
 
