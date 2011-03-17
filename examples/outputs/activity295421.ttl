@@ -1,4 +1,4 @@
-@prefix activity: <http://plings.net/terms#>. #needs to be created
+@prefix activity: <http://purl.org/net/ontologies/leisure-activity#>. #needs to be created.  suggested namespace may need to change.
 @prefix concept: <http://plings.net/keywords/> . # needs to be created
 @base <http://plings.net/a/295421/> . 
 
@@ -17,6 +17,8 @@
 @prefix tl: <http://purl.org/NET/c4dm/timeline.owl#>.
 @prefix cal: <http://www.w3.org/2002/12/cal#>.
 @prefix gr: <http://purl.org/goodrelations/v1#>.
+@prefix postcode: <http://data.ordnancesurvey.co.uk/ontology/postcode/> .
+
 
 <http://plings.net/a/295421>
 	a activity:Activity;
@@ -31,7 +33,8 @@
 	cal:dtstart "2011-01-26T15:00:00"^^xsd:dateTime;
 	activity:contact <http://plings.net/a/295421/contact> ;
   dct:subject  concept:Climbing ;
-# activity:relatedActivity <?a> , <?b> ;
+# activity:relatedActivity <?a> , <?b> ; # this property is not in the data for this record, 
+                                         # but is included as an example for other records that do.
 .
 <price>
 	a gr:PriceSpecifcation ;
@@ -75,9 +78,10 @@ concept: a skos:ConceptScheme ;
   geo:long -1.916745 ;
   v:street-address "Strathmore Road" ;
   v:postal-code "DL12 8DS" ;
+  postcode:postcode <http://data.ordnancesurvey.co.uk/id/postcodeunit/DH128DS> ;
   ov:phoneNumber "01833 696 374" ;
   ov:localAuthority <http://statistics.data.gov.uk/doc/local-authority-district/00EJ> ;
-  ov:ward <http://statistics.data.gov.uk/id/local-authority-ward/00EJME> 
+  admingeo:ward <http://statistics.data.gov.uk/id/local-authority-ward/00EJME> 
 .
 
 #provider
@@ -90,6 +94,7 @@ concept: a skos:ConceptScheme ;
   activity:contact <http://plings.net/o/4863/contact> ;
   v:street-address "County Hall" ;
   v:postal-code "DH1 5UL" ;
+  postcode:postcode <http://data.ordnancesurvey.co.uk/id/postcodeunit/DH15UL> ;
 .  
 <http://plings.net/o/4863/contact>
   a foaf:Agent ;
@@ -99,11 +104,64 @@ concept: a skos:ConceptScheme ;
   
 # Vocabulary
 activity:Activity
+  a rdfs:Class
 	rdfs:subClassOf event:Event, gr:Offering;
 	rdfs:label "Activity"@en;
 	rdfs:comment "A thing to do, perhaps with a particular time and place. For example, Yoga class, Wednesday 7pm, Ashton Leisure Centre."@en; 
   rdfs:isDefinedBy activity:
 .
+
+activity:ActivityProvider 
+  a rdfs:Class ;
+  rdfs:subClassOf foaf:Agent ;
+  rdfs:label "Activity Provider"@en ;
+  rdfs:comment "The provider of an Activity - typically an Organisation such as a Youth Club, a School, a Sport Centre, etc."@en ;
+  rdfs:isDefinedBy activity: ;
+.
+
+activity:minAge 
+  a owl:DatatypeProperty ;
+  rdfs:label "Minimum Age"@en;
+  rdfs:isDefinedBy activity: ;
+  rdfs:domain activity:Activity ;
+  rdfs:comment "The minimum age that a person can be to participate in the activity."@en ;
+.
+
+activity:maxAge 
+  a owl:DatatypeProperty ;
+  rdfs:label "Maximum Age"@en;
+  rdfs:isDefinedBy activity: ;
+  rdfs:domain activity:Activity ;
+  rdfs:comment "The maximum age that a person can be to participate in the activity."@en ;
+.
+
+activity:provider 
+  a owl:ObjectProperty ;
+  rdfs:label "Provider"@en;
+  rdfs:isDefinedBy activity: ;
+  rdfs:domain activity:Activity ;
+  rdfs:range activity:ActivityProvider ;
+  rdfs:comment "The provider of an activity"@en ;
+.
+
+activity:contact 
+  a owl:ObjectProperty ;
+  rdfs:label "Contact"@en;
+  rdfs:isDefinedBy activity: ;
+  rdfs:range foaf:Agent ;
+  rdfs:comment "A person or organisation that may be contacted for further details."@en ;
+.
+
+
+activity:relatedActivity 
+  a owl:ObjectProperty ;
+  rdfs:label "Related Activity"@en;
+  rdfs:isDefinedBy activity: ;
+  rdfs:range activity:Activity ;
+  rdfs:domain activity:Activity ;
+  rdfs:comment "An activity that may be of interest to people interested in this activity."@en ;
+.
+
 
 # Activity properties
 # activity:minAge
@@ -112,9 +170,8 @@ activity:Activity
 # activity:contact
 # activity:relatedActivity
 
-# openvocab properties
+# openvocab properties (need to be created)
 # localAuthority
-# ward
 # phoneNumber
 # postalAddress
 
