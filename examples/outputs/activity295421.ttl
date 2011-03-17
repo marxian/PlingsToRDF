@@ -24,8 +24,9 @@
 	a activity:Activity;
 	rdfs:label "Climbing - Teesdale Leisure Centre"@en; 
 	gr:hasPriceSpecification <price> ;
-	activity:minAge "0"^^xsd:int;
-	activity:maxAge "0"^^xsd:int;
+#	activity:minAge "10"^^xsd:int; # these age properties are just '0' in the data - I would suggest not outputting  zero/null/Unknown in the RDF, 
+                                #  but instead not output the property at all unless there is a meaningful value.
+#	activity:maxAge "16"^^xsd:int;
 	activity:provider <http://plings.net/o/4863>;
 	event:place <http://plings.net/v/59352>;
 	event:time <time>; 
